@@ -4,8 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <style>
+        .container{
+            /* justify-content: center; */
+            /* align-content: center; */
+           justify-items: center;
+           width: 52%;
+           margin-top: 6px;
+           height: 680px;
+            border:1px solid black;
+            border-radius: 25px;
+            background: linear-gradient(40deg,
+rgba(49,85,118,255));
+        }
+        .heading{
+            margin-top: 3px;
+            display: flex;
+            align-content: center;
+            justify-items: center;
+            height: 70px;
+            width: 700px;
+           gap:30px;
+            border: 0px solid red;
+
+        }
+        
+        #h{
+            position: relative;
+            top:-90px;
+        }
+        .l-s{
+            position: relative;
+            left: 20px;
+            display: flex;
+            gap:10px;
+        }
+        .gridcontents{
+            display: grid;
+         
+            grid-template-columns: repeat(2,350px);
+            grid-template-rows: repeat(2,299px);
+            border: 0px solid green;
+            height: 600px;
+            width: 720px;
+        }
+        .aaa{
+            display: flex;
+
+            width:98%;
+            border:0px solid black
+        }
+        .par{
+            /* border: 1px solid black; */
+            border-radius: 25px;;
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+        .par,.prop,.report{
+            border: 0px solid black;
+            border-radius: 25px;
+        }
+        .report{
+            justify-items: center;
+            border: 1px solid black;
+            top:50px;
+            width: 400px;
+            grid-row: 1/3;
+            grid-column: 2/3;
+        }
+        .report:hover{
+            transform: scale(1.1);
+            transition: 3s ease-in;
+        }
+        .pro{
+            grid-column: 1/2;
+            grid-row:2/3;
+            border: 1px solid black;
+            border-radius: 25px;
+            background: linear-gradient(120deg,white,rgb(179, 216, 234,0.5));
+        }
+        .d{
+            padding:20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="heading">
+            <!-- <div class="cart">ups-cart</div>
+            <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>Servies</li>
+                    <li>Procuts</li>
+                    <li>Contact US</li>
+                </ul>
+            </div> -->
+            <div class="display-7 text-light">
+                UPS-CART
+            </div>
+            <div class="navbars">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link text-light" aria-current="page" href="/day11/cloningdibble.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light " aria-disabled="true">Contact US</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="l-s">
+                <button type="button"  class="btn btn-outline-light rounded-pill" style="height: 30px;">SIGNUP</button>
+                <button type="button"  class="btn btn-outline-light rounded-pill"  style="height: 30px;">LOGIN</button>
+
+            </div>
+        </div>
+        <div class="gridcontents">
+            <div class="par">
+                <div class="display-6 text-light">
+                    Smart Heart Care,
+                </div>
+                <div class="display-6 text-light">
+                    Easy Check-ups,
+                </div>
+                <p class="display-7" style="color:rgb(197, 184, 184)">Lorem ipsum, dolor sit amet consectetur adipisicing elit. turi qui provident nulla, reiciendis nam?</p>
+                <button type="button"  class="btn btn-outline-primary rounded-pill" style="height: 30px;">Reserve Seat</button>
+
+            </div>
+            <div class="report">
+                <h1 style="color:rgb(255, 255, 255) " class="display-4">REPORT BASE</h1>
+                <img  style="border-radius: 25px; margin-left: 30px; width:360px ; position: relative; right: 23px;" src="/assests/Screenshot 2025-05-03 202516.png" alt="">
+            </div>
+            <div class="pro">
+                <div class="d">
+                    <h4>Healthy,Heart,Happy Life</h4>
+                </div>
+                <div class="aaa">
+                    <h4>Stay Ahead of Heart Disease With Smart Care</h4>
+                    
+                    <img style="border-radius: 25px;" src="/assests/Screenshot 2025-05-03 203525.png" alt="">
+                </div>
+                <h4 style="color:rgb(96, 88, 88)" id="h">Heart specialist</h4>
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>
